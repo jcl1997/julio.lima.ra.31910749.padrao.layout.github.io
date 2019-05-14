@@ -1,0 +1,23 @@
+{
+  "name": "julio-lima-ra-31910749-padrao-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcl1997/julio-lima-RA-31910749-padrao-layout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcl1997/julio-lima-RA-31910749-padrao-layout/issues"
+  },
+  "homepage": "https://github.com/jcl1997/julio-lima-RA-31910749-padrao-layout#readme"
+}
