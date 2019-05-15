@@ -5,10 +5,13 @@
 }
 
 .container {
+    margin-top: 0.5%;
     display: flex;
     direction: row;
-    width: 100%;
+    max-width: 100%;
     min-width: 100px;
+    min-height: 50px;
+    border: 1px solid #255525;
 }
 
 .left > span {
@@ -16,17 +19,21 @@
     direction: row;
     color: #333333;
     width: 30%;
-    text-align: left;
     vertical-align: center;
 }
 
-a {
-    direction: row;
+div.right {
+    height: 100%;
+}
+
+.right a {
     display: flex;
+    direction: row;
     text-decoration: none;
     color: #333333;
-    width: 70%;
-    text-align: right;
+    min-height: 50px;
+    width: 60%;
+    border-right: 1px solid #333333;
 }
 
 ul {
