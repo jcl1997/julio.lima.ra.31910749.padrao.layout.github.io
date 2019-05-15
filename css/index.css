@@ -1,29 +1,38 @@
 * {
     margin: 0;
+    width: 100%;
+    max-width: 100%;
 }
 
-.header{
+.container {
     display: flex;
-    text-align: center;
+    direction: row;
     width: 100%;
+    min-width: 100px;
+}
+
+.left > span {
+    display: flex;
+    direction: row;
+    color: #333333;
+    width: 30%;
+    text-align: left;
+    vertical-align: center;
 }
 
 a {
+    direction: row;
+    display: flex;
     text-decoration: none;
     color: #333333;
-    margin: 0;
-    padding: 0;
+    width: 70%;
+    text-align: right;
 }
 
 ul {
+    direction: row;
     display: flex;
     list-style: none;
 }
-
-li {
-    display: flex;
-    margin-left: 2.2%;
-    border-left: 100px;
-} 
 
 ;
