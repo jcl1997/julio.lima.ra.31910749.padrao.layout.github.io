@@ -10,7 +10,7 @@
     direction: row;
     max-width: 100%;
     min-width: 100px;
-    min-height: 50px;
+    min-height: 30px;
     border: 1px solid #255525;
 }
 
@@ -22,18 +22,16 @@
     vertical-align: center;
 }
 
-div.right {
-    height: 100%;
-}
-
 .right a {
     display: flex;
     direction: row;
     text-decoration: none;
     color: #333333;
-    min-height: 50px;
+    min-height: 30px;
     width: 60%;
-    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    text-align: center;
+    vertical-align: center;
 }
 
 ul {
