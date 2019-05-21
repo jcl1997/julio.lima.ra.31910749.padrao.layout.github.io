@@ -8,14 +8,9 @@ a {
     text-decoration: none;
 }
 
-hr {
-    clear: both;
-    visibility: hidden;
-}
-
 div.container {
     position: relative;
-    top: 5%;
+    top: 5px;;
     left: 0.5%;
     display: flex;
     flex-direction: row;
@@ -67,7 +62,6 @@ div.left img {
 
 @media (max-width: 1200px) {
     div.container {
-        display: flex;
         flex-direction: column;
         text-align: center;
         border: none;
@@ -80,20 +74,14 @@ div.left img {
         min-width: 100%;
         max-width: 100%;
     }
-    
+
     div.left {
         min-width: 100%;
         max-width: 100%;
         max-height: 50px;
         min-height: 50px;
     }
-    
-    hr {
-        clear: both;
-        visibility: visible;
-        color: #333333;
-    }
-    
+
     div.right div {
         position: relative;
         left: 0;
@@ -105,13 +93,13 @@ div.left img {
         border-left: none;
         border-bottom: 1px solid #333333;
     }
-    
+
     div.right div a {
         position: relative;
         top: 5px;
         left: 0%;
     }
-    
+
     div.left img {
         position: relative;
         top: 15px;
