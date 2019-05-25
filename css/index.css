@@ -1,112 +1,67 @@
 * {
     margin: 0;
-    background-color: #FFFFFF;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-a {
-    color: #333333;
-    text-decoration: none;
-}
-
-div.container {
-    position: relative;
-    top: 5px;;
-    left: 0.5%;
+.flex {
     display: flex;
-    flex-direction: row;
-    min-height: 35px;
-    min-width: 98%;
-    max-width: 98%;
-    border: 1px solid #333333;
-    padding: 3px;
-    border-radius: 3px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    flex-flow: column wrap;
 }
 
-div.left {
-    min-width: 30%;
-    max-width: 30%;
+.logo {
+    width: 25%;
 }
 
-div.right {
-    flex-direction: row;
-    max-height: 50px;
-    min-width: 70%;
-    max-width: 70%;
+.logo img {
+    width: 25%;
 }
 
-div.right div {
-    position: relative;
-    left: 49%;
-    float: left;
-    min-height: 35px;
-    height: 100%;
-    min-width: 10%;
-    max-width: 15%;
-    border-left: 1px solid #333333;
+.link {
+    width: 75%;
 }
 
-div.right div a {
-    position: relative;
-    top: 25%;
-    left: 10%;
+.link ul {
+    display: inline-flex;
+    list-style: none;
 }
 
-div.left img {
-    position: relative;
-    top: 15%;
-    min-width: 40px;
-    max-width: 120px;
-    left: 5%;
+.link ul li {
+    display: flex;
+    align-items: center;
 }
 
-@media (max-width: 1200px) {
-    div.container {
-        flex-direction: column;
-        text-align: center;
-        border: none;
-        box-shadow: none;
+.link a {
+    text-decoration: none;
+    color: #333333;
+}
+
+@media all and (min-width: 768px) {
+    .flex {
+        margin-top: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 3px;
+        border: 1px solid #333333;
+        border-radius: 5px;
+        flex-flow: row wrap;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     }
 
-    div.right {
-        flex-direction: column;
-        max-height: 50px;
-        min-width: 100%;
-        max-width: 100%;
+    .logo {
+        flex: 50%;
     }
 
-    div.left {
-        min-width: 100%;
-        max-width: 100%;
-        max-height: 50px;
-        min-height: 50px;
+    .link {
+        display: flex;
+        flex: 50%;
+        justify-content: flex-end;
     }
 
-    div.right div {
-        position: relative;
-        left: 0;
-        min-height: 30px;
-        max-height: 30px;
-        min-width: 100%;
-        max-width: 100%;
-        float: none;
-        border-left: none;
-        border-bottom: 1px solid #333333;
-    }
-
-    div.right div a {
-        position: relative;
-        top: 5px;
-        left: 0%;
-    }
-
-    div.left img {
-        position: relative;
-        top: 15px;
-        left: 0;
-        min-width: 40px;
-        max-width: 100px;
+    .link li {
+        border-left: 1px solid #333333;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
-
-;
