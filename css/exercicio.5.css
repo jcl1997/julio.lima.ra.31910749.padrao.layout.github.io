@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.logo img {
+    width: 25%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #333333;
+    padding: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.search input {
+    border: 1px solid #333333;
+    padding: 3px;
+    height: 20px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    flex: 60%;
+}
+
+.search span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333333;
+    color: #FCFCFC;
+    background: #333333;
+    padding: 3px;
+    height: 20px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    flex: 40%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    visibility: hidden;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.icon-footer span {
+    padding: 5px;
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        margin-top: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 3px;
+        border: 1px solid #333333;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+        padding: 3px;
+        flex-flow: row wrap;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .search {
+        display: flex;
+        justify-content: center;
+        border-bottom: none;
+        box-shadow: none;
+    }
+
+    .search input {
+        flex: none;
+        width: 30%;
+    }
+
+    .search span {
+        flex: none;
+        width: 15%;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        flex: 32%;
+        visibility: visible;
+    }
+    
+    .icon span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        padding: 2px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        visibility: hidden;
+    }
+}
