@@ -10,18 +10,6 @@ nav {
     flex-flow: column wrap;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.logo img {
-    width: 25%;
-}
-
 .link ul {
     list-style: none;
 }
@@ -39,6 +27,18 @@ nav {
     color: #333333;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 25%;
+}
+
 .search {
     display: flex;
     justify-content: center;
@@ -49,11 +49,11 @@ nav {
 
 .search input {
     border: 1px solid #333333;
-    flex: 60%;
     padding: 3px;
     height: 20px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    flex: 60%;
 }
 
 .search span {
@@ -61,53 +61,57 @@ nav {
     justify-content: center;
     align-items: center;
     border: 1px solid #333333;
-    flex: 40%;
     color: #FCFCFC;
     background: #333333;
     padding: 3px;
     height: 20px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+    flex: 40%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    visibility: hidden;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.icon-footer span {
+    padding: 5px;
 }
 
 @media all and (min-width: 768px) {
-    nav {
+    .container {
         margin-top: 3px;
         margin-left: 3px;
         margin-right: 3px;
         padding: 3px;
         border: 1px solid #333333;
         border-radius: 5px;
-        flex-flow: row wrap;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     }
 
-    .logo {
-        display: flex;
-        justify-content: flex-start;
-        flex: 25%;
-        padding: 0;
-        box-shadow: none;
-    }
-
-    .search {
-        display: flex;
-        justify-content: center;
-        flex: 45%;
-        border-bottom: none;
-    }
-
-    .search input {
-        flex: 80%;
-    }
-
-    .search span {
-        flex: 20%;
+    nav {
+        padding: 3px;
+        flex-flow: row wrap;
     }
 
     .link {
         display: flex;
-        flex: 30%;
+        flex: 50%;
         justify-content: flex-end;
         align-items: center;
     }
@@ -119,5 +123,51 @@ nav {
     .link li {
         border-left: 1px solid #333333;
         border-bottom: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        flex: 50%;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    .search input {
+        flex: none;
+        width: 30%;
+    }
+
+    .search span {
+        flex: none;
+        width: 15%;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        flex: 32%;
+        visibility: visible;
+    }
+    
+    .icon span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        padding: 2px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        visibility: hidden;
     }
 }
