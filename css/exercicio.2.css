@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
-.link ul {
-    list-style: none;
-}
-
 nav {
     display: flex;
     flex-flow: column wrap;
+}
+
+.link ul {
+    list-style: none;
 }
 
 .link li {

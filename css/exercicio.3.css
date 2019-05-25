@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 25%;
+}
+
+.link ul {
+    list-style: none;
+}
+
+.link li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #333333;
+    padding: 3px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #333333;
+    padding: 3px;
+    flex: 60%;
+}
+
+.search input {
+    border: 1px solid #333333;
+    flex: 40%;
+    padding: 3px;
+    height: 20px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.search span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333333;
+    flex: 40%;
+    color: #FCFCFC;
+    background: #333333;
+    border: 1px solid #333333;
+    padding: 3px;
+    height: 20px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+@media all and (min-width: 768px) {
+    nav {
+        margin-top: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 3px;
+        border: 1px solid #333333;
+        border-radius: 5px;
+        flex-flow: row wrap;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        flex: 25%;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        flex: 45%;
+        border-bottom: none;
+    }
+
+    .search input {
+        flex: 80%;
+    }
+
+    .search span {
+        flex: 20%;
+    }
+
+    .link {
+        display: flex;
+        flex: 30%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .link ul {
+        display: inline-flex;
+    }
+
+    .link li {
+        border-left: 1px solid #333333;
+        border-bottom: none;
+    }
+}
