@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo img {
+    width: 25%;
+}
+
+.text {
+    padding: 10px;
+    align-items: center;
+}
+
+.text h1 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3px;
+}
+
+.text span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    padding: 3px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+    
+.icon i {
+    font-size: 25px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.info-btn {
+    border-radius: 3px; 
+    background: #000000;
+    color: #FCFCFC;
+    padding: 3px;
+    cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        flex-flow: row wrap;
+        border-top: 1px solid #333333;
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .text {
+        flex: 33%;
+        width: 33%;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    .text h1 {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .text span {
+        display: flex;
+        align-items: center;
+    }
+
+    .start {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: column wrap;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column wrap;
+    }
+
+    .end {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-flow: column wrap;
+    }
+
+    .logo {
+        padding: 3px;
+    }
+
+    .info-btn {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+    .icon span {
+        flex-flow: row wrap;
+        margin-bottom: 10px;
+    }
+}
