@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: block;
+    flex-flow: column wrap;
+    border-right: 1px solid #333333;
+    width: 75%;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 3px;
+    border-bottom: 1px solid #333333;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #666666;
+}
+
+.login img {
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.login span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 3px;
+    color: #FCFCFC;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3px;
+}
+
+.link ul {
+    list-style: none;
+}
+
+.link a {
+    text-decoration: none;
+    color: #494949;
+}
+
+.link li {
+    padding: 6px;
+}
+
+.lista-exercicio {
+    visibility: hidden;
+}
+
+@media all and (min-width: 768px) {
+    body {
+        display: flex;
+    }
+
+    .container {
+        justify-content: flex-start;
+        display: block;
+        flex: 25%;
+    }
+
+    .lista-exercicio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 75%;
+        visibility: visible;
+    }
+
+    .lista-exercicio ul {
+        list-style: none;
+    }
+
+    .lista-exercicio a {
+        text-decoration: none;
+        color: #000000;
+    }
+}
