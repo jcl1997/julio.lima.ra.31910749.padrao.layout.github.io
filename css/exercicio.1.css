@@ -31,12 +31,17 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 3px;
+    opacity: 0.8;
     border-bottom: 1px solid #333333;
 }
 
 .link a {
     text-decoration: none;
     color: #333333;
+}
+
+.link i {
+    padding: 3px;
 }
 
 @media all and (min-width: 768px) {
