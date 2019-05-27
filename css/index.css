@@ -5,7 +5,18 @@
     box-sizing: border-box;
 }
 
-div nav a {
+.lista-exercicio {
+    display: flex;
+    justify-content: center;
+    border: none;
+    box-shadow: none;
+}
+
+.lista-exercicio li {
+    list-style: none;
+}
+
+.lista-exercicio a {
     text-decoration: none;
     color: #333333;
 }
